@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\AnnexBread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\NALread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\SEIread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\SyntaxElementParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecBinCoderCABAC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecCAVLC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecConformance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecCu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecEntropy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecGop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecSbac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecSlice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecTop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\AnnexBread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\NALread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\SEIread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\SyntaxElementParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecBinCoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecBinCoderCABAC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecCAVLC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecConformance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecCu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecEntropy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecGop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecSbac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecSlice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Workspace\tmiv_build\_deps\hm-src\source\Lib\TLibDecoder\TDecTop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="\Workspace\tmiv\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6493894C-9A7B-3863-AAAC-22B4372800A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7957CAB9-A2F5-3FEB-B5E2-348C4A842FFE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

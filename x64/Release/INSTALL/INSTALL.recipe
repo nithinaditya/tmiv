@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Parser\Release\BitrateReport.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Common\Release\CommonTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Decoder\Release\Decoder.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Encoder\Release\Encoder.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\GeometryQuantizer\Release\GeometryQuantizerTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\MivBitstream\Release\MivBitstreamTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Encoder\Release\MpiEncoder.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Encoder\Release\Multiplexer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Packer\Release\PackerTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Parser\Release\Parser.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Pruner\Release\PrunerTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Renderer\Release\Renderer.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Renderer\Release\RendererFrontTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\Renderer\Release\RendererTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\ViewOptimizer\Release\ViewOptimizerTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\source\ViewingSpace\Release\ViewingSpaceTest.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\_deps\vvdec-build\source\App\vvdecapp\Release\vvdecapp.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\_deps\vvenc-build\source\App\vvencFFapp\Release\vvencFFapp.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Workspace\tmiv_build\x64\Release\INSTALL</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

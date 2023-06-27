@@ -1,0 +1,12 @@
+.vscode
+.kateproject
+.directory
+build
+build.*
+install
+install.*
+Catch2
+.idea/
+cmake-build-*/
+.vs
+CMakeSettings.json

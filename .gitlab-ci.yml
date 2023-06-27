@@ -1,0 +1,88 @@
+.build_rules_template: &build_rules_definition
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - .clang-format
+        - .clang-tidy
+        - .gitlab-ci.yml
+        - "**/CMakeLists.txt"
+        - "**/*.cmake"
+        - "**/*.cmake.in"
+        - "**/*.cpp"
+        - "**/*.h"
+        - "**/*.hpp"
+
+default:
+  interruptible: true
+
+GCC 9 Release:
+  <<: *build_rules_definition
+  image: rikorose/gcc-cmake:gcc-9
+  tags:
+    - linux
+  script:
+    - mkdir -p build && cd build
+    - cmake -DCMAKE_CXX_FLAGS="-Wall -Wextra -Wpedantic -Werror" -DENABLE_CLANG_TIDY=OFF -DCMAKE_BUILD_TYPE=Release ..
+    - make -j $(nproc)
+    - make -j $(nproc) test
+
+Clang 11 Debug:
+  <<: *build_rules_definition
+  image: cbachhuber/clang:11
+  tags:
+    - linux
+  script:
+    - mkdir -p build && cd build
+    - >
+      cmake
+      -DCMAKE_CXX_FLAGS="-Wall -Wextra -Wpedantic -Werror -fprofile-arcs -ftest-coverage"
+      -DCMAKE_BUILD_TYPE=Debug
+      ..
+    - make -j $(nproc)
+    - make -j $(nproc) test
+    - cmake --build . --target clang_format
+    - git diff
+    - if [[ $(git diff) ]]; then echo "Formatting is wrong! See above."; return 1; fi
+    - cd ..
+    - mkdir coverage_html
+    - >
+      gcovr build --gcov-executable 'llvm-cov-11 gcov' -f 'source/' -e '.*\.test\.cpp'
+      --xml coverage.xml --xml-pretty --html-details coverage_html/index.html --print-summary
+  artifacts:
+    reports:
+      cobertura: coverage.xml
+    paths:
+      - coverage_html/
+    expire_in: 5 days
+
+VC 16 Release:
+  <<: *build_rules_definition
+  image: buildtools2019:latest
+  tags:
+    - windows
+  script:
+    - mkdir -p build
+    - cd build
+    - 'cmake -G "Visual Studio 16 2019" -DCMAKE_CXX_FLAGS="/DWIN32 /D_WINDOWS /W3 /GR /EHsc /WX" -DENABLE_CLANG_TIDY=OFF ..'
+    - 'cmake --build . --parallel --config Release --target ALL_BUILD'
+    - 'cmake --build . --config Release --target RUN_TESTS'
+
+AsciiDoc:
+  image: asciidoctor/docker-asciidoctor:1.2
+  tags: [ linux ]
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - doc/test_model/**/*
+  script:
+    - cd doc/test_model
+    - asciidoctor --backend html5 -a data-uri index.adoc
+    - mv index.html ../../test_model.html
+    - asciidoctor-pdf -r asciidoctor-mathematical -a pdf-style=pdf_theme.yml index.adoc
+    - mv index.pdf ../../test_model.pdf
+  artifacts:
+    paths:
+      - test_model.html
+      - test_model.pdf
